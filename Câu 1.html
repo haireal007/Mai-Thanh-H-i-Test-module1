@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu1</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    let Diem = [2, 3, 4, 5, 6, 7, 5, 6, 20, 100, 150, 2];
+
+    function FindMax(A) {
+        for (let i = 0; i < A.length; i++) {
+            console.log(A[i]);
+        }
+        A.sort(function (a, b) {
+            return a - b
+        });
+        let b = A[A.length - 1];
+        alert("Giá tri lớn nhất là:" + " " + b)
+    }
+
+    FindMax(Diem);
+</script>
